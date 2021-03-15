@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="HTML Files/Bridge to literacy Home.html">Home</a></li>
+  <li><a href="HTML Files/Blog.html">Blog</a></li>
+  <li><a href="HTML Files/Apply.html">Apply</a></li>
+  <li><a href="HTML Files/Testimonials.html">Testimonials</a></li>
+  <li><a href="HTML Files/Our Partners.html">Our Partners</a></li>
+  <li><a href="HTML Files/Our Team.html">Our Team</a></li>
+</ul>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for posts */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Between The Bridge</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Percy Jackson: Literary Masterpiece and ESL Resource</h2>
+      <h5>March 14, 2021</h5>
+      <div class="img" style="height:200px;">Image</div>
+      <p>Percy Jackson was a big part of my childhood, as I’m sure it was for many other children who grew up reading Rick Riordan’s stories. I spent many summers hunched over the children’s section of my local library, entranced by the rich world that Rick Riordan created for the Percy Jackson universe, seamlessly weaving ancient mythology into a modern-day setting. Rick Riordan’s books have been so successful that the name Percy Jackson is universally recognized. Similar to the names Harry Potter and Katniss Everdeen, Percy Jackson is recognized by children around the world.</p>
+<p><a href="Blog Posts/PercyJackson.html">Read Full Post Here!</a></p>
+    </div>
+    <div class="card">
+      <h2>The Impact Of Harry Potter</h2>
+      <h5>February 27, 2021</h5>
+      <div class="img" style="height:200px;">Image</div>
+      <p>On September 1, 1998, Scholastic published Harry Potter and the Sorcerer’s Stone, the first US edition of the UK’s Harry Potter and the Philosopher’s Stone which became the first book in the now-iconic Harry Potter series written by J.K Rowling. Harry Potter has since evolved into the multimedia empire seen today. The spread of Harry Potter can be seen throughout generations since the kids who first started reading the series back in the 90s still now enjoying the present day which shows the popularity of the series to this day.</p>
+      <p><a href="Blog Posts/HarryPotter.html">Read Full Post Here!</a></p>
+      </div>
+    <div class="card">
+      <h2>A Testament to Education</h2>
+      <h5>January 14, 2021</h5>
+      <div class="img" style="height:200px;">Image</div>
+      <p>In rural areas, it’s hard to get a proper education. For the people who can, they have to travel miles to reach their school, only to receive an unsatisfactory education. Bridge to Literacy has partnered up with Spring Sprouts to help improve education for people from poverty-stricken areas, focusing on rural Honduras and China. Our program is focused on giving an individualized curriculum for each student based on their skill level.</p>
+      <p><a href="Blog Posts/TestamentEducation.html">Read Full Post Here!</a></p>
+      </div>
+    <div class="card">
+      <h3>Follow Us</h3>
+      <p>Social Media Links</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
