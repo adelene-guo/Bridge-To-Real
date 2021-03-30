@@ -5,8 +5,16 @@ html {
 
 body {
     margin:0;   
+    /*THIS WILL APPLY TO ALL TEXT AUTOMATICALLY*/
+    color:white;
+    font-size:2.5rem;
+    font-family: 'Montserrat', arial, sans-serif;
+    text-align:center;
+    /*NO NEED TO STYLE IT ON YOUR OWN, HEADINGS SCALE AUTOMATICALLY*/
 }
 
+
+/*START HEADER*/
 .header {
     background-image:url(images/headerimage.jpg);
     background-repeat: no-repeat;
@@ -22,6 +30,7 @@ body {
     color:black;
     margin:0;
     padding:.35rem;
+    text-align:left;
 }
 
 h1.header-text{
@@ -31,3 +40,34 @@ h1.header-text{
 h2.header-text{
     font-size:5rem;
 }
+/*END HEADER*/
+
+/*START MISSION*/
+.mission{
+    display:flex;
+    margin:10rem;
+}
+
+.mission-child{
+    margin:5rem;
+}
+/*END MISSION*/
+
+/*START ABOUT*/
+.columns{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:6.5rem;
+    
+}
+
+.column{
+    width:30vw;
+    margin:0;
+}
+
+#about-anchor{
+    color:white;
+}
+/*END ABOUT*/
