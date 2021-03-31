@@ -71,3 +71,46 @@ h2.header-text{
     color:white;
 }
 /*END ABOUT*/
+
+/*START SOCIAL*/
+
+/*END SOCIAL*/
+
+
+/*START DONATE*/
+.donate-div{
+    display:flex;
+
+}
+
+.donate-img{
+    width:50vw;
+    height:auto;
+    margin:0;
+}
+
+.donate-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:10rem;
+}
+
+.donate-button{
+    display:flex;
+    background-color:white;
+    width:8em;
+    height:6rem;
+    justify-content:center;
+    align-items:center;
+    box-shadow: .5rem .7rem black;
+}
+
+a.donate-button, a.donate-button:link, a.donate-button:visited{
+    color:black;
+    text-decoration:none;
+    font-style:normal;
+}
+
+/*END DONATE*/
