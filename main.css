@@ -114,3 +114,24 @@ a.donate-button, a.donate-button:link, a.donate-button:visited{
 }
 
 /*END DONATE*/
+
+/*START GRANT*/
+
+.grants{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img.grants{
+    margin:0;
+    width:25vw;
+}
+
+#numbers{
+    width:33vw;
+}
+/*END GRANT*/
