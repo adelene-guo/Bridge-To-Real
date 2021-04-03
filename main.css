@@ -74,6 +74,10 @@ h2.header-text{
 
 /*START SOCIAL*/
 
+#social-icon{
+    width:7rem;
+    margin:2rem 3vw;
+}
 /*END SOCIAL*/
 
 
@@ -115,9 +119,9 @@ a.donate-button, a.donate-button:link, a.donate-button:visited{
 
 /*END DONATE*/
 
-/*START GRANT*/
+/*START GRANTS1*/
 
-.grants{
+.grants1{
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
@@ -126,7 +130,7 @@ a.donate-button, a.donate-button:link, a.donate-button:visited{
     justify-content: space-evenly;
 }
 
-img.grants{
+img.grants1{
     margin:0;
     width:25vw;
 }
@@ -134,4 +138,16 @@ img.grants{
 #numbers{
     width:33vw;
 }
-/*END GRANT*/
+/*END GRANTS1*/
+
+/*START GRANTS2*/
+
+.grants2{
+    padding:0 25%;
+}
+
+#iwp{
+    width:100%;
+}
+
+/*END GRANTS 2*/
