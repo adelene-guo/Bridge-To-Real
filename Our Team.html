@@ -14,5 +14,450 @@
   <li><a href="Our Partners.html">Our Partners</a></li>
   <li><a href="Our Team.html">Our Team</a></li>
 </ul>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+section {
+    position: relative;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.container .card .content .imgBox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, .25);
+}
+
+.container .card .content .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .card .content .contentBox h3{
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .content .contentBox h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.container .card .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.container .card:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .sci li a{
+    color: lightgray;
+    font-size: 24px;
+}
+
+.container .card .sci li a:hover{
+    color: gray;
+    transition: 0.3s;
+}
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Eric%20Cholico.JPG/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Eric Cholico <br><span>Teaching Director<br>Teacher in Honduras, Mexico</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.facebook.com/eric.cholico.12" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="https://www.instagram.com/redelleparole_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li style="--i:3">
+                        <a href="https://www.linkedin.com/in/eric-cholico-91a91b1a2/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:4">
+                        <a href="https://twitter.com/eric_cholico" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Adie%20Adelene%20Guo.JPG/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Adelene Guo<br><span>Technology Director</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/adieguo/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Olivia%20Zadvinskiy.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Olivia Zadvinskiy<br><span>Marketing/Media Director<br> Teacher</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/olivia_zadvinskiy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Juliet%20Grochowski.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Juliet Grochowski <br><span>Ambassador Director</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Vicentia%20Gagakuma.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Vicentia Gagakuma <br><span>Teacher</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="
+                        https://www.instagram.com/vicentiagaga/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="
+                        https://www.linkedin.com/in/vicentia-gagakuma-32b448176/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:3">
+                        <a href="https://twitter.com/vicentiagaga" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Mariana-0001.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Mariana Weaver <br><span>Teacher</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Nikita%20Chernin.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Nikita Chernin<br><span>Teacher and Technology Team</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.facebook.com/nikita.chernin" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="https://www.instagram.com/n6chernin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Yi-Jen%20Yang.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Yi Jen Yang<br><span>Teacher in Honduras<br>Media/Marketing Team </span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/yijen_yang18/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Michelle%20Zhang.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Michelle Zhang<br><span>Teacher<br>Social Media/Marketing </span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Ariya%20Zheng.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Ariya Zheng<br><span>Teacher<br>Social Media/Marketing </span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Suraj.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Suraj Chaudhary <br><span>Web Developer<br>Social Media/Marketing</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.facebook.com/surajcdry9988/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="https://www.instagram.com/suraj_cdry/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li style="--i:3">
+                        <a href="https://www.linkedin.com/in/surajcdry/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div><div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Rohan%20Khan.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Muhammad Rohan khan  <br><span>Web Developer<br> Media Marketing Team</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.facebook.com/Rohankhan17343" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="https://instagram.com/rhk__rohan?igshid=1bhjunkx2rbkn" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/XinJie%20Chan.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Cynthia XinJie Chan<br><span>Media/Marketing Team</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://instagram.com/cynthia.chxn?igshid=14khibtztw95j" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/laura%20oliveira.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Laura Oliveira <br><span>Social Media - Designer </span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/lauraouat_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Cristina%20Diaz.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Cristina Diaz<br><span>Video Editor</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/_cristina.diaz/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Maeve%20Della.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Maeve Sheehan<br><span>Video Editor</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/afilmbymaevesheehan/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="https://www.linkedin.com/in/maeve-della-a482a0187/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Emmanuella%20Agyemang.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Emmanuella Agyemang<br><span>Written Content Editor <br> Video Editor</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/emmanuella_ama/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="https://www.linkedin.com/in/EmmanuellaAgyemang/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Sheila%20Cholico.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Sheila Cholico<br><span>Written Content Creator</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="
+                        https://www.linkedin.com/in/sheila-cholico-b7439b1a3/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Katherine%20Bernstein.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Katherine Bernstein<br><span>Written Content Creator </span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/katherinerbernstein/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Harmeet%20Sandhu.jpg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Harmeet Sandhu<br><span>Written Content Creator </span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Eva%20Zheng.jpeg/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Eva Zheng<br><span>Written Content Creator </span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox"><img src="https://img1.wsimg.com/isteam/ip/287f8bee-30b1-4ec7-96da-2b5cac237af5/Rasmika%20Chakraborty.PNG/:/rs=w:1440,h:1440" height="150"></div>
+                    <div class="contentBox">
+                        <h3>Rasmika Chakraborty<br><span>Ambassador</span></h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.instagram.com/c_rasmika/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
