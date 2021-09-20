@@ -1,3 +1,14 @@
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+* { color:#fff; text-decoration: none;}
+
 * {
   box-sizing: border-box;
 }
@@ -51,7 +62,7 @@ body {
   margin: 100px;
   background-color:#236EB9;
   text-align: left;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial';
   color:#fff;
 }
 
@@ -109,16 +120,13 @@ body {
   width: 300px;
 }
 
-
-span{
+span a{
   position: relative;
   display: inline-flex;
   width: 180px;
   height: 55px;
   margin: 0 15px;
   perspective: 1000px;
-}
-span a{
   font-size: 19px;
   letter-spacing: 1px;
   transform-style: preserve-3d;
@@ -151,4 +159,19 @@ span a:after{
 }
 span a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
+}
+
+      button {
+        background-color: #00000000;
+        border: none;
+        outline: none;
+        text-align: center;
+        display: inline-block;
+      }
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 0px;
+  padding: 10px;
 }
