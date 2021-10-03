@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+nav ul {
+    list-style-type: none;
+    margin: 1.5 rem auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00000000;
+    display: inline-block;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover:not(.active) {
+    background-color: #00000000;
+  }
+  
+  .active {
+    background-color: #00000000;
+  }
+ 
+  h1 {
+    margin: 25px 35px 70px;
+  }
+
+  .container {
+    display: inline-flex;
+  }
+
+  .card {
+    width: 250px;
+    height: 225px;                 /* Set width of cards */
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    border: 1px solid white;    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    margin: 35px;                  /* Add space between cards */
+  }
+  
+  .card-header {
+    color: #75978d;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #75978d;
+    background-color: white;
+    padding: 5px 10px;
+  }
+  
+  .card-main {
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    padding: 16px 0;            
+  }
+
+  button {
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: "Poppins";
+  }
+
+  button:hover {
+    background: #ccc;
+    color: #75978d;
+    font-weight: bold;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #0c5740;
+  }
+
+  .main-description {
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 150px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container{
+      display: inline-block; 
+    }
+
+    .container-2{
+      margin-top: -15px;
+    }
+  }
