@@ -149,7 +149,7 @@ span a:after{
   border-radius: 5px;
 }
 span a:before{
-  color: #fff;
+  color: #236EB9;
   background: #000;
   transform: rotateY(0deg) translateZ(25px);
 }
@@ -174,4 +174,111 @@ span a:hover{
   width: 300px;
   border: 0px;
   padding: 10px;
+}
+
+
+
+.popup {
+    margin: 5% auto;
+    padding: 20px;
+    background: #236EB9;
+    border-radius: 15px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Questrial';
+    color:#fff;
+}
+.popup h2 {
+  text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Questrial';
+    color:#fff;
+}
+.popup h2 {
+  text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Questrial';
+    color:#fff;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.popup .close:hover {
+    color:black;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+.popup span a:before,
+.popup span a:after{
+  position: absolute;
+  content: "DONATE";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.popup span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.popup span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.popup span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+      .popup button {
+        background-color: #00000000;
+        border: none;
+        outline: none;
+        text-align: center;
+        display: inline-block;
+      }
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* These are the rules you are looking for. */
+.overlay {
+    transition: opacity 500ms;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.overlay:target {
+    opacity: 0;
+    pointer-events: none;
 }
