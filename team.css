@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-=======
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-section {
->>>>>>> Stashed changes
     position: relative;
 }
 
@@ -33,7 +28,7 @@ section::after {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0px 0;
+    margin: 40px 0;
 }
 
 .container .card {
@@ -192,7 +187,7 @@ h2.header-text{
 }
 
 body {
-  margin: 100px;
+  margin: 0px;
   background-color:#236EB9;
   text-align: left;
   font-family: 'Questrial';
