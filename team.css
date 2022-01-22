@@ -183,8 +183,8 @@ h2.header-text{
 }
 
 body {
-  margin: 0px;
   background-color:#236EB9;
+  margin: 100px;
   text-align: left;
   font-family: 'Questrial';
   color:#fff;
