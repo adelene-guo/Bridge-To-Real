@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+section {
+>>>>>>> Stashed changes
     position: relative;
 }
 
@@ -164,7 +169,11 @@ section::after {
 }
 
 .header-text{
+<<<<<<< Updated upstream
     color:white;
+=======
+    color:black;
+>>>>>>> Stashed changes
     margin:0;
     padding:.35rem;
     font-family: 'Questrial', sans-serif;
