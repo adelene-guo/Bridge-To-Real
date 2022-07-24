@@ -1,13 +1,6 @@
 
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
 
-* { color:#1c2e4a; text-decoration: none;}
+* { color:#fff; text-decoration: none;}
 
 * {
   box-sizing: border-box;
@@ -190,7 +183,7 @@ span a:hover{
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: blue;
   padding: 20px;
   margin-top: 20px;
 }
