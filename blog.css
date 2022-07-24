@@ -1,0 +1,219 @@
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+* { color:#fff; text-decoration: none;}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 12.5%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.typewrite{
+  font-size:4.5rem;
+}
+.header {
+    background-image:url(images/headerimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height:75vh;
+    display:flex;
+    justify-content:flex-end;
+    flex-flow: column wrap;
+}
+
+.header-text{
+    color:black;
+    margin-top: 3%;
+    text-align: center;
+    padding:.35rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 1000;
+}
+
+h1.header-text{
+    font-size:6.5rem;
+}
+
+h2.header-text{
+    font-size:4rem;
+}
+
+.header-text{
+  color: white;
+}
+
+body {
+  margin: 100px;
+  background-color:#236EB9;
+  text-align: left;
+  font-family: 'Questrial';
+  color:#fff;
+}
+
+* { color:#fff; text-decoration: none;}
+
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  width: 300px;
+}
+
+.text {
+  background-color: #236EB9;
+  color: white;
+  font-size: 23px;
+  padding: 16px 16px;
+  width: 300px;
+}
+
+span a{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Questrial', sans-serif;
+
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "DONATE";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+      button {
+        background-color: #00000000;
+        border: none;
+        outline: none;
+        text-align: center;
+        display: inline-block;
+      }
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 0px;
+  padding: 10px;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
