@@ -219,7 +219,7 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width: 200px;
+  width: 100px;
 }
 
 .container:hover .image {
@@ -228,7 +228,7 @@ body {
 
 .container:hover .middle {
   opacity: 1;
-  width: 200px;
+  width: 100px;
 }
 
 .text {
@@ -236,7 +236,7 @@ body {
   color: white;
   font-size: 23px;
   padding: 16px 16px;
-  width: 200px;
+  width: 100px;
 }
 
 span a{
