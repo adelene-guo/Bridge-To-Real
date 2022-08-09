@@ -257,7 +257,7 @@ span a{
 span a:before,
 span a:after{
   position: absolute;
-  content: "DONATE";
+  content: "APPLY NOW!";
   height: 55px;
   width: 180px;
   display: flex;
