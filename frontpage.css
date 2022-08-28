@@ -100,7 +100,7 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width: 300px;
+  width: 250px;
 }
 
 .container:hover .image {
@@ -117,7 +117,7 @@ body {
   color: white;
   font-size: 23px;
   padding: 16px 16px;
-  width: 300px;
+  width: 250px;
 }
 
 span a{
@@ -133,7 +133,7 @@ span a{
   transform: translateZ(-25px);
   transition: transform .25s;
   font-family: 'Questrial', sans-serif;
-  
+
 }
 span a:before,
 span a:after{
