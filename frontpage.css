@@ -16,7 +16,7 @@
 .column {
   float: left;
   width: 12.5%;
-  padding: 0px;
+  padding: 5px;
 }
 
 /* Clearfix (clear floats) */
