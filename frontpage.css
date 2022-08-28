@@ -100,7 +100,7 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width: 250px;
+  width: 300px;
 }
 
 .container:hover .image {
@@ -116,8 +116,8 @@ body {
   background-color: #236EB9;
   color: white;
   font-size: 23px;
-  padding: 16px 16px;
-  width: 250px;
+  padding: 13px 13px;
+  width: 300px;
 }
 
 span a{
