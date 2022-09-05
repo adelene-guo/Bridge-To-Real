@@ -282,3 +282,49 @@ span a:hover{
     opacity: 0;
     pointer-events: none;
 }
+
+.awards{
+  display: flex;
+}
+.card{
+  width: 25%;
+  position: relative;
+
+
+}
+.contain{
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.awardImg{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  transition: all 1s ease;
+
+
+}
+.description{
+  padding: 25px;
+  transition: 1s ease;
+  position: absolute;
+  font-size: 23px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  text-align: center;
+}
+.card:hover .description{
+  z-index: 2;
+  opacity: 0.9;
+ 
+
+}
+.card:hover .awardImg{
+  opacity: 0.1;
+ 
+
+}
